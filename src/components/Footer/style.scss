@@ -1,0 +1,102 @@
+@import "../../mixins.scss";
+
+.footer {
+    background-color: var(--black3);
+    padding: 50px 0;
+    color: white;
+    position: relative;
+    // height: 100%;
+
+    .ContentWrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menuItems {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+
+        @include md {
+            margin-bottom: 30px;
+            gap: 30px;
+
+        }
+
+        .menuItem {
+            transition: all ease 0.3s;
+            cursor: pointer;
+            font-size: 12px;
+        
+
+            @include md {
+                font-size: 16px;
+
+            }
+
+            &:hover {
+                
+                color:yellow;
+            }
+        }
+    }
+
+    .infoText {
+        font-size: 15px;
+        text-align: center;
+        opacity: 0.5;
+        line-height: 20px;
+        max-width:100%;
+        margin-bottom: 20px;
+        text-align: center;
+        @include md {
+            // max-width:100%;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+    }
+
+    
+    .specialIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .icon {
+        font-size: 15px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        height: 50px;
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease 0.3s;
+        &:hover {
+            color: pink;
+            box-shadow: 0 0 0.625em yellow;
+            background-color: white;
+            color: black
+            ;
+        }
+
+        @include md {
+            font-size: 18px;
+            
+
+        }
+
+
+    }
+
+
+
+}
